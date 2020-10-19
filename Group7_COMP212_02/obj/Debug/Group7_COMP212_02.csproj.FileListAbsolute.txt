@@ -1,0 +1,15 @@
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\bin\Debug\Group7_COMP212_02.exe.config
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\bin\Debug\Group7_COMP212_02.exe
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\bin\Debug\Group7_COMP212_02.pdb
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02.csprojAssemblyReference.cache
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\MainWindow.g.cs
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\App.g.cs
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02_MarkupCompile.cache
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02_MarkupCompile.lref
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\MainWindow.baml
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02.g.resources
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02.Properties.Resources.resources
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02.csproj.GenerateResource.cache
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02.exe
+C:\Users\user\Documents\College\2020Fall\Programming\lab2\Group7_COMP212_02\Group7_COMP212_02\obj\Debug\Group7_COMP212_02.pdb
