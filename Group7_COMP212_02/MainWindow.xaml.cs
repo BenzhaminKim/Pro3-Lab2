@@ -16,6 +16,8 @@ using System.Collections.ObjectModel; // for ObservableCollection<T>
 
 namespace Group7_COMP212_02
 {
+    
+
     public class Vegetable
     {
         public string Name { get; set; }
@@ -29,7 +31,48 @@ namespace Group7_COMP212_02
             this.priceInDouble = price;
             Price = string.Format("${0:0.00}", price);
         }
+        public override string ToString()
+        {
+            return $"{Name} {Price}";
+        }
     }
+    public class Fruit
+    {
+        public string Name { get; set; }
+        public string Price { get; set; }
+
+        private double priceInDouble; //to save price as double type
+
+        public Fruit(string name, double price)
+        {
+            Name = name;
+            this.priceInDouble = price;
+            Price = string.Format("${0:0.00}", price);
+        }
+        public override string ToString()
+        {
+            return $"{Name} {Price}";
+        }
+    }
+    public class Flower
+    {
+        public string Name { get; set; }
+        public string Price { get; set; }
+
+        private double priceInDouble; //to save price as double type
+
+        public Flower(string name, double price)
+        {
+            Name = name;
+            this.priceInDouble = price;
+            Price = string.Format("${0:0.00}", price);
+        }
+        public override string ToString()
+        {
+            return $"{Name} {Price}";
+        }
+    }
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -38,26 +81,30 @@ namespace Group7_COMP212_02
 
         ObservableCollection<Vegetable> vegetables
                               = new ObservableCollection<Vegetable>();
+        ObservableCollection<Flower> flowers
+                              = new ObservableCollection<Flower>();
+        ObservableCollection<Fruit> fruits
+                              = new ObservableCollection<Fruit>();
 
         public MainWindow()
         {
             InitializeComponent();
+            doMyCustomWork();
         }
         public void doMyCustomWork()
         {
             //bind the target dataGrid1 to the source vegetables
-            this.dataGrid1.ItemsSource = vegetables;
-
+            fruitCombo.Items.Add(new Fruit("Plum",15) );
+            fruitCombo.Items.Add(new Fruit("Kiwi", 30));
+            flowerCombo.Items.Add(new Flower("Lily", 40));
+            flowerCombo.Items.Add(new Flower("Rose", 30));
+            
             //Add items to datagrid1
             //NOTE: If a ObservableCollection object changes, 
             //it notifies its target (if bound).
             //Thus the data is sent to its target every time 
             //it changes (i.e. in this case every time 
             //a new Vegetable object is added).
-            vegetables.Add(new Vegetable("Corn", 5.11));
-            vegetables.Add(new Vegetable("Tomato", 10.22));
-            vegetables.Add(new Vegetable("Cabbage", 7.33));
-            vegetables.Add(new Vegetable("Karela", 5.44));
 
 
         }
@@ -78,7 +125,7 @@ namespace Group7_COMP212_02
             vegetables.Add(new Vegetable("Spinach", 6.11));
             vegetables.Add(new Vegetable("Methi", 11.22));
         }
-        private void call_ComboBox_greenVegSelection(object sender, SelectionChangedEventArgs e)
+        private void call_ComboBox_Fruit(object sender, SelectionChangedEventArgs e)
         {
             // (expression as Type) is equivalent to:
             // expression is Type ? (Type)expression : null 
@@ -86,19 +133,23 @@ namespace Group7_COMP212_02
 
             if (item == null) return;
 
-            Vegetable v = (Vegetable)item;
+            Fruit fruit = (Fruit)item;
+            this.dataGrid1.ItemsSource = fruits;
+            fruits.Add(fruit);
 
             //greenVeg.Text = v.ToString(); //set the string to a textblock named greenVeg
         }
 
-        private void call_ComboBox_redVegSelection(object sender, SelectionChangedEventArgs e)
+        private void call_ComboBox_flower(object sender, SelectionChangedEventArgs e)
         {
             // (expression as Type) is equivalent to:
             // expression is Type ? (Type)expression : null 
             var item = (sender as ComboBox).SelectedItem;
             if (item == null) return;
 
-            Vegetable v = (Vegetable)item;
+            Flower flower = (Flower)item;
+            this.dataGrid1.ItemsSource = flowers;
+            flowers.Add(flower);
 
             // redVeg.Text = v.ToString(); //set the string to a textblock named redVeg
         }
@@ -107,15 +158,6 @@ namespace Group7_COMP212_02
         {
             //way to display the default text "Pick a green vegetable"
             //in combo box until the user selects an item from combo box.
-            greenComboBox.IsEditable = true;
-            greenComboBox.IsReadOnly = true;
-            greenComboBox.Text = "Pick a green vegetable";
-
-            //way to display the default text "Pick a red vegetable"
-            //in combo box until the user selects an item from combo box.
-            redComboBox.IsEditable = true;
-            redComboBox.IsReadOnly = true;
-            redComboBox.Text = "Pick a red vegetable";
 
             //greenVeg.Text = " ";
             //redVeg.Text = " ";

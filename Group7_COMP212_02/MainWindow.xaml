@@ -28,8 +28,6 @@
                   Background="Beige"
             AutoGenerateColumns="True" 
             IsReadOnly="True">
-            <Viewbox x:Name="viewbox1">
-            </Viewbox>
         </DataGrid>
 
         <Grid Grid.Row="1" Grid.Column="0" >
@@ -47,20 +45,23 @@
                            Foreground="Black"
                            TextAlignment="Left" Margin="47,0,681.6,84.8"/>
             <ComboBox Grid.Row="0" Grid.Column="0"
-                      Name="greenComboBox" 
+                      Name="fruitCombo" 
                       IsEditable="True"
                       IsReadOnly="True"
                       Text="Pick a fruit"
-                      SelectionChanged="call_ComboBox_greenVegSelection" 
-                      Margin="47,73,514.6,6.8"/>
+                      SelectionChanged="call_ComboBox_Fruit" 
+                      Margin="47,73,514.6,6.8">
+
+            </ComboBox>
 
             <ComboBox Grid.Row="0" Grid.Column="0"
-                      Name="redComboBox" 
+                      Name="flowerCombo" 
                       IsEditable="True"
                       IsReadOnly="True"
                       Text="Pick a flower"
-                      SelectionChanged="call_ComboBox_redVegSelection" 
-                      Margin="47,20,514.6,58.8" />
+                      SelectionChanged="call_ComboBox_flower" 
+                      Margin="47,20,514.6,58.8">
+            </ComboBox> 
             <TextBlock Grid.Row="0" Grid.Column="0"
                 x:Name="textblock2_Copy"
                 Text="Fruit"  
